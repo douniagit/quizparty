@@ -1,0 +1,31 @@
+body {
+  background-color: rgb(245, 245, 245);
+}
+table {
+    display: flex;
+    justify-content: center;
+}
+td {
+    border-style: solid;
+}
+.Bloc {
+  opacity: 0.1;
+}
+.Bloc2 {
+  opacity: 1;
+}
+#container {
+  border-style: solid;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 33%;
+}
+#question {
+  margin-left: 30%;
+}
+h1 {
+  margin-left: 40%;
+  margin-top: 10vh;
+}

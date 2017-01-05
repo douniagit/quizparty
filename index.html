@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Quizz Party</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <title>Quizz Party</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<header>
-	<body>
-		<h1>Quizz party !!!</h1>
-		<table>
-		<p>Question 1 Les lapons vivent:</p>
-			<tr>
+<body>
 
-			
-			<td>En antartique</td>
-			<td>En terre de feu</td>
-			</tr>
+  <h1>Quizz party !!!</h1>
+  <div id='container'>
+    <form id='quiz'>
+      <h3 id='question'></h3>
+      <table>
 
-		<tr>
-			<td>En artique</td>
-			<td>Dans les yvelines</td>
-			
+        <tr>
+          <td id="A"><input type='radio' id='answer1'>
+            <label for='answer1' id='answer1Label'> </label></td>
+            <td id="B"><input type='radio' id='answer2'>
+              <label for='answer2' id='answer2Label'> </label></td>
+            </tr>
+            <tr>
+              <td id="C"><input type='radio' id='answer3'>
+                <label for='answer3' id='answer3Label'> </label></td>
+                <td id="D"><input type='radio' id='answer4'>
+                  <label for='answer4' id='answer4Label'> </label></td>
+                </tr>
+              </table>
+            </form>
+            <br>
+            <button onclick='previewQuestion()'>Preview</button>
+            <button onclick='nextQuestion()'>Next</button>
+          </div>
 
-			<table>
-		<p>Question 1 Les lapons vivent:</p>
-			<tr>
+          <!-- <div id="table"></div>
 
-			
-			<td> En antartique</td>
-			<td>En terre de feu</td>
-			</tr>
+          <button class="buttonA"><a href="">precedent</a></button>
+          <button class="buttonB"><a href="">suivant</a></button> -->
 
-		<tr>
-			<td>En artique</td>
-			<td>Dans les yvelines</td>
-			
-			
-			
+          <!-- <div id='container'>
+          <form id='quiz'>
+          <h3 id='question'></h3>
+          <br>
+          <input name='answerChoice' type='radio' id='answer1'>
+          <label for='answer1' id='answer1Label'> </label>
 
+          <input name='answerChoice' type='radio' id='answer2'>
+          <label for='answer2' id='answer2Label'> </label>
 
+          <input name='answerChoice' type='radio' id='answer3'>
+          <label for='answer3' id='answer3Label'> </label>
 
+          <input name='answerChoice' type='radio' id='answer4'>
+          <label for='answer4' id='answer4Label'> </label>
+        </form>
+        <br>
+        <button onclick='nextQuestion()'>Next</button>
+      </div> -->
 
+    </body>
 
-			</tr>
-		</table>
-
-
-
-
-
-			</tr>
-		</table>
-	</body>
-
-</header>
-</html>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="index2.js"></script>
+    </html>
