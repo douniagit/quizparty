@@ -1,4 +1,3 @@
-// function quiz(){
 var score = 0;
 var currentQuestion = 0;  /* Index of the current question in qAndA Array */
 
@@ -53,7 +52,7 @@ var quizNode = document.getElementById('quiz');
 
 // reveal the score to the user.
 function revealScore(){
-  showResult('Quiz complete.\nYour score is: ' + score);
+  showResult('Quiz complet.\nTon score est: ' + score);
 
 }
 
@@ -126,7 +125,7 @@ function nextQuestion(){
   }
   // If no answer was selected alert the user and return from this function
   if(typeof answerSelected === 'undefined'){
-    alert('You did not select an answer!');
+    alert('il faut choisir!');
     return;
 
   // An answer was selected
@@ -142,7 +141,7 @@ function nextQuestion(){
       score++;
     } else {
       // Incorrect answer
-      resultText = selectedAnswer + ' is incorrect.\nThe correct answer is: ' + correctAnswer;
+      resultText = selectedAnswer + ' est correct.\nla réponse correcte est: ' + correctAnswer;
       score--;
     }
     // reset the radio boxes
@@ -195,7 +194,7 @@ function previewQuestion(){
   }
   // If no answer was selected alert the user and return from this function
   if(typeof answerSelected === 'undefined'){
-    alert('You did not select an answer!');
+    alert('il faut choisir!');
     return;
 
   // An answer was selected
@@ -205,15 +204,15 @@ function previewQuestion(){
     resultText = '';
 
     // Check the answer and inform the user
-    if( selectedAnswer === correctAnswer){
-      // Correct answer
-      resultText = 'Correct!';
-      score++;
-    } else {
-      // Incorrect answer
-      resultText = selectedAnswer + ' is incorrect.\nThe correct answer is: ' + correctAnswer;
-      score--;
-    }
+    // if( selectedAnswer === correctAnswer){
+    //   // Correct answer
+    //   resultText = 'Correct!';
+    //   score++;
+    // } else {
+    //   // Incorrect answer
+    //   resultText = selectedAnswer + ' est correct.\nla réponse correcte est: ' + correctAnswer;
+    //   score--;
+    // }
     // reset the radio boxes
     // radioAnswers[currentQuestion].checked = false;
 
@@ -225,7 +224,7 @@ function previewQuestion(){
       populateForm(currentQuestion);
 
       // set a short timer to delete the result and unhide the form
-      window.setTimeout(transitionQuestions, 2000);
+      window.setTimeout(transitionQuestions,100);
     } else {
       // no more questions show the final result to the user.
       revealScore();
@@ -237,10 +236,5 @@ function previewQuestion(){
 // Do initial form population
 populateForm(currentQuestion);
 
-console.log('Sa marche brah!');
+console.log('Ca marche brah!');
 
-
-// setInterval(function(){document.write(Date());}, 1000);
-
-// };
-// quiz();
